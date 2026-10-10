@@ -1,0 +1,13 @@
+# Generated reports and logs
+reports/
+output/
+logs/
+*.csv
+*.html
+*.log
+*.xlsx
+*.transcript.txt
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
