@@ -1,10 +1,23 @@
 # ConfigMgr PowerShell Toolkit
 
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/v/ABK.ConfigMgrToolkit?label=PowerShell%20Gallery)](https://www.powershellgallery.com/packages/ABK.ConfigMgrToolkit) [![Downloads](https://img.shields.io/powershellgallery/dt/ABK.ConfigMgrToolkit)](https://www.powershellgallery.com/packages/ABK.ConfigMgrToolkit)
+
 PowerShell scripts and a field guide for managing **Microsoft Configuration Manager** (SCCM / MECM) from the command line: connecting to a site, querying the SMS Provider, triggering client actions, health checks and remediation, application and package deployment, content distribution, and software update compliance.
 
 Maintained by **Anthony Buhnerkemper**, M365 / PowerShell administrator in Houston, TX.
 
 📘 **Read the guide:** [GUIDE.md](GUIDE.md): *Managing Microsoft Configuration Manager (SCCM/MECM) with PowerShell*
+
+
+## Install from PowerShell Gallery
+
+```powershell
+Install-Module ABK.ConfigMgrToolkit -Scope CurrentUser
+Import-Module ABK.ConfigMgrToolkit
+Get-Command -Module ABK.ConfigMgrToolkit
+```
+
+Each script is also exported as a function with the same name and parameters (e.g. `Get-Help <FunctionName> -Full`). Prerequisite modules (Microsoft Graph, ExchangeOnlineManagement, ConfigMgr console, Citrix SDK, etc.) are not auto-installed; install the ones the functions you use need, as described below. The module source lives in [`ABK.ConfigMgrToolkit/`](ABK.ConfigMgrToolkit/).
 
 ## Requirements
 
